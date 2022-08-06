@@ -1,0 +1,54 @@
+body{
+    background-color: rgb(197, 228, 228);
+ 
+}
+
+h1{
+    /* text-align: center; */
+    box-shadow: 3px 3px 8px black;
+    box-sizing: border-box;
+    font: normal 35px arial;
+    font-weight: bolder;
+    background-color: brown;
+    color: antiquewhite;
+}
+section{
+    box-shadow: 1px 1px 8px black;
+}
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: 115px;
+    left: -35px;
+
+}
+nav#menu li{
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 5px;
+    margin: 2px;
+}
+nav#menu li :hover{
+    background-color: rgb(139, 139, 139);
+    transition: background-color 1s;
+    color: white;
+    padding: 5px;
+    margin: -5px;
+}
+    nav#menu a {
+        text-decoration: none;
+        color:rgb(0, 0, 0)
+    }
+h3{
+    display: none;
+}
+img#res_paral{
+    position: absolute;
+    left: 300px;
+    top: 330px;
+}
+footer#rodape p{
+    text-align: center;
+    border: 1px solid #606060;
+}
