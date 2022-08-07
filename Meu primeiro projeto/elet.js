@@ -19,7 +19,7 @@ else{
 }
 
 if  (rp2 == 1/ra+1/rb+1/rc && res2>=1000){
-   //req.innerHTML= `Valor equivalente: ${res2.toFixed(1)} k&Omega;`
+   req.innerHTML= `Valor equivalente: ${res2.toFixed(1)} k&Omega;`
 }
 else {
     req.innerHTML= `Valor equivalente: ${res2.toFixed(1)} &Omega;`
