@@ -6,22 +6,23 @@ function calcular(){
     var ra =Number.parseInt(r1.value)
     var rb =Number.parseInt(r2.value)
     var rc =Number.parseInt(r3.value)
-    var rp1 =(1/ra+1/rb+1/rc)
-    var res=1/rp1
-    var rp2=(ra*rb)/(ra+rb)
+    var rp1 =(1/ra+1/rb)
+    var res1=1/rp1
+    var rp2=(1/ra+1/rb+1/rc)
+    var res2=1/rp2
     
-if(rp2==(ra*rb)/(ra+rb) && rp2<1000){
-    req.innerHTML= `Valor equivalente: ${rp2.toFixed(2)} &Omega;`
+if ((rp1==1/ra+1/rb && res1>=1000)){
+    req.innerHTML= `Valor equivalente: ${res1.toFixed(1)} k&Omega;`
 }
 else{
-    req.innerHTML= `Valor equivalente: ${res.toFixed(2)} K&Omega;`
+   req.innerHTML= `Valor equivalente: ${res1.toFixed(1)} &Omega;`
 }
 
-if   (rp1==(1/ra+1/rb+1/rc) && rp1<1000){
-    req.innerHTML= `Valor equivalente: ${res.toFixed(2)} &Omega;`
+if  (rp2 == 1/ra+1/rb+1/rc && res2>=1000){
+   //req.innerHTML= `Valor equivalente: ${res2.toFixed(1)} k&Omega;`
 }
-else{
-    req.innerHTML= `Valor equivalente: ${res.toFixed(2)} K&Omega;`
+else {
+    req.innerHTML= `Valor equivalente: ${res2.toFixed(1)} &Omega;`
 }
 }
 document.write(Date());
