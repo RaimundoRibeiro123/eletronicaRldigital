@@ -10,6 +10,12 @@ function calcular(){
     let veq1=1/rp1
     let rp2=1/ra+1/rb+1/rc
     let veq2=1/rp2
+if(r1.value.length==0){
+    alert("Digite o valor da resistência")
+}
+else if ( r2.value.length==0){
+    alert("Digite outro valor da resistencia")
+}
 
 if (rp1==(1/ra+1/rb) && (veq1>=1000)){
     req.innerHTML= `Valor equivalente: ${veq1.toFixed()} k&Omega;`
@@ -25,4 +31,12 @@ else if(veq2<1000){
 }
 }
 
-document.write(Date());
+var data= new Date()
+
+setInterval(function() {
+   //document.location.reload(1);
+   
+  }, 1000); 
+  document.write("Hora: ",data.toLocaleTimeString(),);
+  
+  

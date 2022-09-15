@@ -1,16 +1,21 @@
 body{
     background-color: rgb(197, 228, 228);
+    width: auto;
+    height: auto;
  
 }
 
 h1{
-    /* text-align: center; */
+    text-align: center;
     box-shadow: 3px 3px 8px black;
     box-sizing: border-box;
     font: normal 35px arial;
     font-weight: bolder;
     background-color: brown;
     color: antiquewhite;
+}
+h2#h2{
+    /* text-align: center; */
 }
 section{
     box-shadow: 1px 1px 8px black;
@@ -46,9 +51,17 @@ h3{
 img#res_paral{
     position: absolute;
     left: 300px;
-    top: 330px;
+    top: 350px;
+    width:150px;
+    height:150px;
+
 }
 footer#rodape p{
     text-align: center;
-    border: 1px solid #606060;
+}
+fieldset{
+    height: 300px;
+    width: 430px;
+
+    background-color: bisque;
 }
